@@ -285,7 +285,7 @@ struct ColorCardView: View {
         
         var body: some View {
             ZStack {
-                Color(color)
+                color
                     .ignoresSafeArea()
                 
                 VStack {
@@ -318,8 +318,6 @@ struct ColorCardView: View {
                         .frame(width: 200, height: 200)
                     
                     */
-                    Text(" \(color)")
-                        .font(.title2)
                 }
                 .transition(.scale)
             }
